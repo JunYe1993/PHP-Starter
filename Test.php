@@ -13,18 +13,15 @@
 	echo "<img src = Pic/MARK0$num.png width = 255 height = 295 />".'<br>';
 ?>
 
-<form>
-	First name:<br>
-	<input type="text" name="firstname"><br>
-	Last name:<br>
-	<input type="text" name="lastname">
-	<select name = "box">
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-	</select>
-	<input type="submit" name="button" value="push">
+<?php 
+	session_start();
+	$_SESSION['temp'] = 1;
+?>
+
+<form action="SubTest.php">
+	Name: <input type="text" name="name"><br>
+	E-mail: <input type="text" name="email"><br>
+	<input type="submit">
 </form>
 
 </body>
