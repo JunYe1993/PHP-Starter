@@ -56,7 +56,7 @@ Your email address is: <?php echo $_GET["email"]; ?><br>
      <input type="radio" name="gender" value="female">Female
      <input type="radio" name="gender" value="male">Male
      <br><br>
-     <input type="submit" name="submit" value="Submit">  
+     <input type="submit" name="submit" value="Submit">
 </form>
 
 <?php

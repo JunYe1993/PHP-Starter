@@ -4,7 +4,8 @@
 
 <?php
 	// .在PHP裡扮演連結的效果 data用法(記得改SERVER時區)
-	echo "今天是".date("Y年m月d日 H:i:s").'<br>';
+	date_default_timezone_set("Asia/Taipei");
+	echo "今天是".date("Y年m月d日 h:i:sa").'<br>';
 ?>
 
 <?php
@@ -22,7 +23,18 @@
 	Name: <input type="text" name="name"><br>
 	E-mail: <input type="text" name="email"><br>
 	<input type="submit">
+	<button type="button" onclick = <?php
+			$num = 2;
+		?>
+		>Click Me!
+	</button> 
 </form>
+
+<?php
+	$myfile = fopen("data.txt", "r") or die("Unable to open file!");
+	echo fread($myfile,filesize("data.txt"));
+	fclose($myfile);
+?>
 
 </body>
 </html>

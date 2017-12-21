@@ -13,5 +13,6 @@
     <input type="button" value="按我傳送選取狀態" onClick="sendState(this.form.a, this.form.b)">
     <input type="checkbox" id="b">
 </form>
+
  
 </body></html>
